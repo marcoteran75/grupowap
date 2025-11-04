@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unirse al Grupo de WhatsApp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .quiniela-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .quiniela-container img {
+            max-width: 300px;
+            max-height: 300px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .quiniela-container p {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+        }
+        .banner {
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #ff4444;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiniela Tony</h1>
+    <div class="banner">Cierre: Viernes 5 diciembre 2025 a las 20:00 horas</div>
+    <div class="container">
+        <div class="quiniela-container">
+            <p>Únete para enviar tu quiniela</p>
+            <!-- Reemplaza 'ruta/a/tu/imagen.jpg' con la URL o ruta de tu imagen -->
+            <img src="https://i.postimg.cc/vZxP57dP/Captura-de-pantalla-2025-10-26-124440.png    " alt="Quiniela" onclick="unirseGrupo()">
+        </div>
+    </div>
+
+    <script>
+        function unirseGrupo() {
+            const grupoWhatsApp = 'DuKFo9SAy160Q3yLB6xGw7'; // ID del grupo
+            const url = `https://chat.whatsapp.com/${grupoWhatsApp}`;
+            alert('Únete al grupo y comparte la imagen de tu quiniela.');
+            window.open(url, '_blank'); // Abre el enlace del grupo en una nueva pestaña
+        }
+    </script>
+</body>
+</html>
